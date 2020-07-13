@@ -1,0 +1,57 @@
+@import "../../styles/colors";
+@import "../../styles/mediaQueries";
+
+.items-list {
+  padding: 20px;
+
+  input.search {
+    border-radius: 15px;
+    outline: none;
+    padding: 5px 10px;
+    border-style: none;
+    border: 1px solid $gray-color;
+  }
+
+  .columns {
+    padding: 0 5px;
+    background-color: rgb(204, 204, 204);
+  }
+
+  .id,
+  .name,
+  .serialNumber,
+  .price {
+    display: inline-block;
+    padding-right: 5px;
+    vertical-align: middle;
+  }
+
+  .id {
+    width: 5%;
+  }
+
+  .name {
+    width: 25%;
+  }
+
+  .serialNumber {
+    width: 30%;
+  }
+
+  .price {
+    width: 25%;
+    word-break: break-all;
+  }
+}
+
+@include mobile {
+  .items-list {
+    padding: 10px;
+
+    .columns {
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}

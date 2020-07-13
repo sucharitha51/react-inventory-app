@@ -1,0 +1,37 @@
+@import "../../styles/colors";
+@import "../../styles/mediaQueries";
+
+.item {
+  border-top: 1px solid #ccc;
+  font-size: 16px;
+  padding: 0 5px;
+
+  &:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+
+  &:nth-child(odd) {
+    background: lighten($gray-color, 15%);
+  }
+
+  .actions {
+    display: inline-block;
+    width: 5%;
+    padding-top: 10px;
+    img {
+      width: 16px;
+      height: auto;
+      margin: 0 5px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .item {
+    font-size: 14px;
+  }
+}

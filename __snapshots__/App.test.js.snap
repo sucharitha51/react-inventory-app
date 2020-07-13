@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App  component App should match with snapshot 1`] = `"<header><h1>My Inventory</h1><div class=\\"actions\\"><span class=\\"add-new\\">Add New Item</span><button style=\\"cursor:pointer;border:1px solid #ccc;border-radius:15px;outline:none;padding:5px 10px;font-size:14px;margin-right:10px;background-color:rgb(204, 204, 204)\\">Export</button></div></header><div class=\\"items-list\\"><div class=\\"columns\\"><p class=\\"id\\">#</p><p class=\\"name\\">Name</p><p class=\\"serialNumber\\">Serial Number</p><p class=\\"price\\">Value</p></div><p>No data.</p></div>"`;
